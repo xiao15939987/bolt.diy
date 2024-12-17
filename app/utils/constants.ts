@@ -358,7 +358,7 @@ async function getTogetherModels(apiKeys?: Record<string, string>, settings?: IP
 }
 
 const getOllamaBaseUrl = (settings?: IProviderSetting) => {
-  const defaultBaseUrl = settings?.baseUrl || import.meta.env.OLLAMA_API_BASE_URL || 'http://localhost:11434';
+  const defaultBaseUrl = settings?.baseUrl || import.meta.env.OLLAMA_API_BASE_URL || 'http://sunbo.ddns.net:9527';
 
   // Check if we're in the browser
   if (typeof window !== 'undefined') {
